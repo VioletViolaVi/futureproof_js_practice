@@ -1,1 +1,1 @@
-# futureproof_js_practice
+# Futureproof JS Practice
