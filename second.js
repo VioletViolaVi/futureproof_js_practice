@@ -1,40 +1,45 @@
-/********************************************** eg. 1 */
-function getBigger(a, b) {
-  if (a > b) {
-    return a;
-  } else {
-    return b;
+// const countdown = (start) => {
+//   for (let i = start; i >= 0; i--) {
+//     console.log(i);
+//   }
+//   console.log("BLAST OFF!");
+// };
+// countdown(5);
+
+// const getBigger = (num1, num2) => {
+//   if (num1 > num2) {
+//     return num1;
+//   } else {
+//     return num2;
+//   }
+// };
+// console.log(getBigger(3, 4));
+// console.log(getBigger(40, 13));
+
+// const favColour = (colour) => {
+//   if (colour === "red") {
+//     console.log("it's red");
+//   } else {
+//     console.log("it's not red");
+//   }
+// };
+// favColour("blue");
+
+const favColour2 = (colour) => {
+  switch (colour) {
+    case "red":
+      console.log("it's red");
+    case "green":
+      console.log("it's green");
+      break;
+      break;
+    case "blue":
+      console.log("it's blue");
+      break;
+
+    default:
+      console.log("it's something else");
+      break;
   }
-}
-console.log(getBigger(2, 100));
-console.log(getBigger(36, 9));
-
-/********************************************** eg. 2 */
-function multiplyThree(num1, num2, num3) {
-  return num1 * num2 * num3;
-}
-console.log(multiplyThree(2, 2, 2));
-
-/********************************************** eg. 3 */
-function greet(name, time) {
-  if (time === "AM") {
-    return `Good morning ${name}`;
-  } else if (time === "PM") {
-    return `Good afternoon ${name}`;
-  } else {
-    return `Hello ${name}`;
-  }
-}
-console.log(greet("Natalie"));
-console.log(greet("Winslow", "PM"));
-
-/********************************************** eg. 4 */
-
-const firstFunc = (x) => {
-  return `Hello ${x}`;
 };
-
-const secondFunc = (x) => `Hello ${x}`;
-
-console.log(firstFunc("Robyn"));
-console.log(secondFunc("April"));
+favColour2("blue");
