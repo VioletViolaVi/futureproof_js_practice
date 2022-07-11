@@ -41,3 +41,27 @@ console.log(myFunc(data));
 
 // take array of post & return username of most liked post
 console.log(myFunc2());
+
+// from class
+const areAnagrams = (a, b) => {
+  if (a.length != b.length) {
+    return false;
+  } else {
+    console.log(a.split(""));
+    return a.split("").every((c) => b.includes(c));
+  }
+};
+
+const getTopUser = (data) => {
+  let currentMax = 0; // max score seen so far
+  let currentUser = null; // username of poster with max score
+
+  for (let post of data) {
+    if (currentMax < post["likes"]) {
+      currentMax = post["likes"];
+      currentUser = post["poster"];
+    }
+  }
+
+  return currentUser;
+};
