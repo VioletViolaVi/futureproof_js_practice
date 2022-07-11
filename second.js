@@ -1,20 +1,20 @@
-const arr = [100, 90, 2, 45, 66, 0, 1, 2, 3];
+// Write a function that takes in two arrays
+// Return true if all the elements in array 1
+// Are also found in array 2
+// containsAll([1, 2, 3], [1, 2]) -> false
+// containsAll([1], [1, 2, 3]) -> true
 
-console.log(arr.length);
-console.log(arr.indexOf(3));
+// Optional
+// Strings are also objects with methods
+// Make a function that checks if two strings are anagrams
 
-for (const item of arr) {
-  console.log("Item: ", item);
-}
-
-arr.sort((a, b) => a - b);
-console.log(arr);
-
-const greaterThan3 = (arr) => {
-  for (const singleArrItem of arr) {
-    if (singleArrItem > 3) {
-      console.log(singleArrItem);
+const containsAll = (arr1, arr2) => {
+  for (const singleVal of arr1) {
+    if (!arr2.includes(singleVal)) {
+      return false;
     }
   }
+  return true;
 };
-greaterThan3([2, 45, 66, 0, 1, 2, 3]);
+console.log(containsAll([1, 2, 3], [1, 2])); // false
+console.log(containsAll([1, 2, 3], [1, 2, 3])); // true
