@@ -27,3 +27,14 @@ function greet(name, time) {
 }
 console.log(greet("Natalie"));
 console.log(greet("Winslow", "PM"));
+
+/********************************************** eg. 4 */
+
+const firstFunc = (x) => {
+  return `Hello ${x}`;
+};
+
+const secondFunc = (x) => `Hello ${x}`;
+
+console.log(firstFunc("Robyn"));
+console.log(secondFunc("April"));
