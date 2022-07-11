@@ -42,4 +42,4 @@ const favColour2 = (colour) => {
       break;
   }
 };
-favColour2("blue");
+favColour2("pie");
